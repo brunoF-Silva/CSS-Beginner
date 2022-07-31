@@ -31,7 +31,7 @@ It allows us to work on an specific element which has a given id -  IDs must be 
 
 /* COMMIT 3 - CLASS SELECTOR 
 IDs in CSS must be unique but classes can be whatever i want*/
-.green{
+/* .green{
     color: green;
 }
 .red{
@@ -43,4 +43,22 @@ IDs in CSS must be unique but classes can be whatever i want*/
 }
 .lowercase{
     text-transform: lowercase;
+} */
+
+/* COMMIT 4 - DIV SPAN 
+*/
+ .green {
+     color: green;
+ }
+
+ .red {
+     color: red;
+     background: gray;
+ }
+div{
+    color: red;
+    background: grey;
+}
+span{
+    text-transform: uppercase;
 }
