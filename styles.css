@@ -18,13 +18,29 @@ h1, h2{
 } */
 
 /* COMMIT 2 - Working with ID
-It allows us to work on an specific element which has a given id -  IDs must be unic*/
-
-#title{
+It allows us to work on an specific element which has a given id -  IDs must be unique*/
+/* #title{
     color: green;
     background: black;
 }
 #subheading{
     color: red;
     background: gray;
+} */
+
+
+/* COMMIT 3 - CLASS SELECTOR 
+IDs in CSS must be unique but classes can be whatever i want*/
+.green{
+    color: green;
+}
+.red{
+    color: red;
+    background: gray;
+}
+#title{
+    font-size: 40px;
+}
+.lowercase{
+    text-transform: lowercase;
 }
