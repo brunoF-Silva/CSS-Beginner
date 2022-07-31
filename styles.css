@@ -1,4 +1,5 @@
-/* ELEMENT SELECTORS */
+/* COMMIT 1 - ELEMENT SELECTORS 
+The very basic*/
 /* h1{
     color: red;
 }
@@ -9,9 +10,21 @@ p{
     color: grey;
 } */
 /* ID */
-body{
+/* body{
     color: red;
 }
 h1, h2{
     color: blue;
+} */
+
+/* COMMIT 2 - Working with ID
+It allows us to work on an specific element which has a given id -  IDs must be unic*/
+
+#title{
+    color: green;
+    background: black;
+}
+#subheading{
+    color: red;
+    background: gray;
 }
