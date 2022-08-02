@@ -1,7 +1,13 @@
-/* font-size, width, height, pixels */
-h1{
-    font-size: 36px;
-    width: 200px;
-    height: 300px;
+/* Percent Values - RELATIVE */
+
+.outer{
+    width: 500px;
+    height: 500px;
     background: blue;
+}
+.inner{
+    width: 50%; 
+    /* the % values are dependent to their parents always */
+    height: 50%;
+    background: red;
 }
