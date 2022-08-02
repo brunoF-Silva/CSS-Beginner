@@ -48,7 +48,7 @@ IDs in CSS must be unique but classes can be whatever i want*/
 /* COMMIT 4 - DIV SPAN 
 we will use span if we would like to style something within the already, so we don't wanna start a new line 
 However DIV we would style in block level (IT STARTS A NEW LINE!!!*/
- .green {
+ /* .green {
      color: green;
  }
 
@@ -59,4 +59,17 @@ However DIV we would style in block level (IT STARTS A NEW LINE!!!*/
 
 span{
     text-transform: uppercase;
+} */
+
+
+/* COMMIT 5 - INHERITANCE 
+whatever style will be add to the parameter element it will ne inherited unless we specifically style the children element*/
+body{
+    color: red;
+}
+div{
+    color: blue;
+}
+h2{
+    color: green;
 }
