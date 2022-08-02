@@ -65,10 +65,12 @@ span{
 /* COMMIT 5 - INHERITANCE 
 whatever style will be add to the parameter element it will ne inherited unless we specifically style the children element*/
 body{
-    color: red;
+    front-family: monospace;
+    line-height: 1.5em;
 }
 div{
     color: blue;
+    border: 3px solid black;
 }
 h2{
     color: green;
