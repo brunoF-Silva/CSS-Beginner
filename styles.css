@@ -1,13 +1,8 @@
-/* vh - height - percent of the screen */
-/* vw - width - percent of the screen */
+/* 
+in order to display html we browses must have some pre-set values for a css.
+in browser dev tools "user agent stylesheet" is the defalt browser styles*/
 
-.banner{
-    width: 50vw;
-    height: 50vh;
-    background: red;
-}
-.header{
-    width: 100vw;
-    height: 100vh;
-    background-color: blue;
+h2{
+    color: red;
+    font-size: 60px;
 }
