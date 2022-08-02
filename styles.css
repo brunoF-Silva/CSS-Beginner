@@ -1,96 +1,18 @@
-/* COMMIT 1 - ELEMENT SELECTORS 
-The very basic*/
-/* h1{
-    color: red;
-}
-h2{
-    color: green;
-}
-p{
-    color: grey;
-} */
-/* ID */
-/* body{
-    color: red;
-}
-h1, h2{
-    color: blue;
-} */
+/* COLOR PROPERTIES */
+/* COLOR BACKGROUND-COLOR */
 
-/* COMMIT 2 - Working with ID
-It allows us to work on an specific element which has a given id -  IDs must be unique*/
-/* #title{
-    color: green;
-    background: black;
+#first{
+    color: rgb(255,0,0);
+    background-color: chocolate;
 }
-#subheading{
-    color: red;
-    background: gray;
-} */
-
-
-/* COMMIT 3 - CLASS SELECTOR 
-IDs in CSS must be unique but classes can be whatever i want*/
-/* .green{
-    color: green;
+#second{
+    color: crimson;
+    background: yellow;
 }
-.red{
-    color: red;
-    background: gray;
+#third{
+    color: rgb(0,0,255);
+    background: rgb(22,65,32);
 }
-#title{
-    font-size: 40px;
+body{
+    background: rgb(172,202,98);
 }
-.lowercase{
-    text-transform: lowercase;
-} */
-
-/* COMMIT 4 - DIV SPAN 
-we will use span if we would like to style something within the already, so we don't wanna start a new line 
-However DIV we would style in block level (IT STARTS A NEW LINE!!!*/
- /* .green {
-     color: green;
- }
-
- .red {
-     color: red;
-     background: gray;
- }
-
-span{
-    text-transform: uppercase;
-} */
-
-
-/* COMMIT 5 - INHERITANCE 
-whatever style will be add to the parameter element it will ne inherited unless we specifically style the children element*/
-/* body{
-    front-family: monospace;
-    line-height: 1.5em;
-}
-div{
-    color: blue;
-    border: 3px solid black;
-}
-h2{
-    color: green;
-} */
-
-
-/*COMMIT 6 - Last Rule And Specificity * Universal Selector */
-/* .red{
-    color: red;
-} 
-p{
-    color: blue;
-} */
-/* Although there's the last rule, here .red is more specific (SPECIFICITY - search about it in w3schools) */
-
-/* UNIVERSAL SELECTOR */
-p{
-    color: red;
-}
-*{
-    color: blue;
-}
-/* Universal selector has the least ammount of specifity - the weaker one */
