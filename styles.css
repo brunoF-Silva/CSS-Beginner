@@ -1,8 +1,20 @@
 /* 
-in order to display html we browses must have some pre-set values for a css.
-in browser dev tools "user agent stylesheet" is the defalt browser styles*/
+calc()
+perform math operations + - * /
+mix and match values
+*/
 
-h2{
-    color: red;
-    font-size: 60px;
+*{
+    margin: 0,
+}
+.navbar{
+    background: blue;
+    height: 100px;
+    color: white;
+    font-size: 3rem;
+}
+
+.banner{
+    background: red;
+    min-height: 100vh;
 }
