@@ -64,7 +64,7 @@ span{
 
 /* COMMIT 5 - INHERITANCE 
 whatever style will be add to the parameter element it will ne inherited unless we specifically style the children element*/
-body{
+/* body{
     front-family: monospace;
     line-height: 1.5em;
 }
@@ -74,4 +74,13 @@ div{
 }
 h2{
     color: green;
+} */
+
+
+/*COMMIT 6 - Lastd Rule And Specificity * Universal Selector */
+p{
+    color: red;
+}
+p{
+    color: pink;
 }
