@@ -1,13 +1,14 @@
-/* Percent Values - RELATIVE */
-
-.outer{
-    width: 500px;
-    height: 500px;
-    background: blue;
+/* 
+em - RELATIVE depends on parent container always
+1em = 16px default browser style;
+1em = base value */
+div{
+    font-size: 10px;
 }
-.inner{
-    width: 50%; 
-    /* the % values are dependent to their parents always */
-    height: 50%;
-    background: red;
+.relative{
+    font-size: 2em;
 }
+.absolute{
+    font-size: 32px;
+}
+/* "relative" follows the default browser settings and depends on it's parent container as well (the outter) to base it's values */
