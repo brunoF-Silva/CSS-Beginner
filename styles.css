@@ -77,10 +77,11 @@ h2{
 } */
 
 
-/*COMMIT 6 - Lastd Rule And Specificity * Universal Selector */
-p{
+/*COMMIT 6 - Last Rule And Specificity * Universal Selector */
+.red{
     color: red;
-}
+} 
 p{
-    color: pink;
+    color: blue;
 }
+/* Although there's the last rule, here .red is more specific (SPECIFICITY - search about it in w3schools) */
