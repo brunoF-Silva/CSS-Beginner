@@ -1,12 +1,18 @@
 /* 
-em - RELATIVE depends on parent container always
-1em = 16px default browser style;
-1em = base value */
+em - RELATIVE depends on root
+1rem = 16px default browser style;
+
+rem works pretty much as a multiplier to their html roots, here absolute has exactly 64px because it is 2x what we wrote in html
+*/
+html{
+    font-size: 32px;
+}
+
 div{
-    font-size: 10px;
+    font-size: 40px;
 }
 .relative{
-    font-size: 2em;
+    font-size: 2rem;
 }
 .absolute{
     font-size: 32px;
