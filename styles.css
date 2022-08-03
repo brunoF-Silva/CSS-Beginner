@@ -1,25 +1,22 @@
-/* 
-if im importing a font then it won't be able to makes it bolder than what it's describid in it's url.
- */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
 
- 
+ /*
+ text-aligh
+ text-indent
+ */
  body{
     font-family: 'Roboto', sans-serif;
-    font-style: italic;
  }
  .main{
     font-family: 'Yesteryear', cursive;
+    text-align: center;
  }
  .subheading{
-    font-style: normal;
-    /* in cases were everything has been changed */
+
  }
  .one{
-    font-weight: bold;
+    text-indent: 10rem;
  }
 .two{
-    font-weight{
-        font-weight: lighter;
-    }
+    text-align: right;
 }
