@@ -1,13 +1,22 @@
-/* Images as background */
+/* Last Rule Order */
 div {
    height: 400px;
    color: pink;
+   color: blue;
 }
 .big-img {
    background: url("./big.jpg");
+   background-repeat: round;
 }
 .small-img {
    background: url("./small.jpg");
+   background-repeat: repeat;
+   background-repeat: no-repeat;
+   background-repeat: repeat-x;
+   background-repeat: repeat-y;
+   background-repeat: space;
+   background-repeat: round;
+   background-repeat: no-repeat;
 }
 .folder-img {
    background: url("./img/folder-img.jpg");
