@@ -7,17 +7,15 @@ div {
 .big-img {
    background: url("./big.jpg");
    background-repeat: round;
+   background-size: cover;
 }
 .small-img {
    background: url("./small.jpg");
-   background-repeat: repeat;
-   background-repeat: no-repeat;
-   background-repeat: repeat-x;
-   background-repeat: repeat-y;
-   background-repeat: space;
    background-repeat: round;
-   background-repeat: no-repeat;
+   background-size: cover;
+
 }
 .folder-img {
    background: url("./img/folder-img.jpg");
+   background-size: contain;
 }
