@@ -1,30 +1,16 @@
-/* 
-CSS BOX MODEL:
-outline
-offset
- */
+/* Default Display Property
+Block: Always start a new line and takes full width
+Inline: Does not start and only take up as much as content space
 
- /* outline is similar to border but has the offset property which allow us to move the outline away or closer to the element content*/
-.buttons {
-    margin: 3rem;
-}
-a {
-    background: #689f3f;
-    text-decoration: none;
-    padding: 1.2rem 1.5rem;
-    color: #222;
-    text-transform: uppercase;
-    cursor: pointer;
-    margin: 0 20px;
-}
-#one {
-    border: 0.2rem solid #222;
-}
-#two {
-    outline-width: 0.2rem;
-    outline-style: solid;
-    outline-color: #222;
-    outline: 0.2rem solid #222;
-    outline-offset: 10px;
-    outline-offset: -10px;
-}
+Elements in html has those display propreties (block or inline) and we can control it by adding a display property in a css selector!
+ */
+ .block {
+    background: blue;
+    color: white;
+    display: inline;
+ }
+ .inline {
+    background: red;
+    color: white;
+    display: block;
+ }
