@@ -1,20 +1,19 @@
 /* 
-calc()
-perform math operations + - * /
-mix and match values
-*/
+font-size font-family (the last is the generic one, meaning the browser will choose some similar option included in that family if none of the other options were avaliable and the chosen one will try to replicate the very first option in the family stack).
+we can download new fonts at google fonts.
+ */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
 
-*{
-    margin: 0,
-}
-.navbar{
-    background: blue;
-    height: 100px;
-    color: white;
-    font-size: 3rem;
-}
-
-.banner{
-    background: red;
-    min-height: 100vh;
-}
+ 
+ body{
+    font-family:'Courier New', Courier, monospace;
+ }
+ h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ h2{
+    font-family: 'Yesteryear', cursive;
+ }
+ #imported{
+    font-family: 'Roboto', sans-serif;
+ }
