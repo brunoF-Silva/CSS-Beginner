@@ -1,19 +1,25 @@
 /* 
-font-size font-family (the last is the generic one, meaning the browser will choose some similar option included in that family if none of the other options were avaliable and the chosen one will try to replicate the very first option in the family stack).
-we can download new fonts at google fonts.
+if im importing a font then it won't be able to makes it bolder than what it's describid in it's url.
  */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
 
  
  body{
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
  }
- h1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
- }
- h2{
+ .main{
     font-family: 'Yesteryear', cursive;
  }
- #imported{
-    font-family: 'Roboto', sans-serif;
+ .subheading{
+    font-style: normal;
+    /* in cases were everything has been changed */
  }
+ .one{
+    font-weight: bold;
+ }
+.two{
+    font-weight{
+        font-weight: lighter;
+    }
+}
