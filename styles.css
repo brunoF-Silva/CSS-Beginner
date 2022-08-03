@@ -1,16 +1,19 @@
-/* Default Display Property
-Block: Always start a new line and takes full width
-Inline: Does not start and only take up as much as content space
-
-Elements in html has those display propreties (block or inline) and we can control it by adding a display property in a css selector!
+/* Horizontal Centering
+inline properties center automaticaly just by using "text-aling: center;" but this doesn't happen with the block ones, since their range still covers the hole horizontal web page,but we can mix width and "margin: whatever auto;" to fix this.
  */
+ body {
+    text-alingh: center;
+ }
  .block {
     background: blue;
     color: white;
-    display: inline;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0px auto;
+    /* up and down, left and right */
  }
  .inline {
     background: red;
     color: white;
-    display: block;
  }
