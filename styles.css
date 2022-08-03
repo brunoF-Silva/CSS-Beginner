@@ -1,4 +1,4 @@
-/* Last Rule Order */
+/* background-position */
 div {
    height: 400px;
    color: pink;
@@ -6,16 +6,19 @@ div {
 }
 .big-img {
    background: url("./big.jpg");
-   background-repeat: round;
    background-size: cover;
+   /* background-position: center; */
 }
 .small-img {
+   border: 2px solid red;
    background: url("./small.jpg");
-   background-repeat: round;
-   background-size: cover;
-
+   background-repeat: no-repeat;
+   background-position: center;
+   /* working with x and y values for positioning using %*/
+   background-position: 20% 50%;
 }
 .folder-img {
    background: url("./img/folder-img.jpg");
    background-size: contain;
+   background-repeat: no-repeat;
 }
