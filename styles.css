@@ -1,40 +1,10 @@
-/*
-Block: Top Bottom Margin Respected
-Inline: Top Bottom Margin Not Respected
-Mobile Navbar
-list-style-type:property
-descendant selectors
- */
-div {
-   /* for blocks */
-   background: blue;
-   color: white;
-   padding: 20px;
+/* inline-block 
+to have a useful margin up and down in in-line elements without turning them into blocks, use "display: inline-block"*/
+
+a {
+   font-size: 60px;
+   background: red;
    margin: 20px;
+   display: inline-block;
 }
-* {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-}
-body {
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-ul li {
-   list-style-type: none;
-}
-/* i can't add margin (up and down) and padding 
-on in-line elements such as links:*/
-ul li a {
-   text-decoration: none;
-   text-transform: capitalize;
-   letter-spacing: 2px;
-   background: #222;
-   color: #f15025;
-   /* padding: 5px;
-   margin: 10px 10px:  
-   it doesn't work! */
-   display: block;
-   margin: 10px;
-   
-}
+
