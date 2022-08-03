@@ -1,10 +1,26 @@
-/* inline-block 
-to have a useful margin up and down in in-line elements without turning them into blocks, use "display: inline-block"*/
-
-a {
-   font-size: 60px;
-   background: red;
-   margin: 20px;
-   display: inline-block;
+/* when pedding a content (box), its dimentions will be added whit its already sizes
+if i use the "box-sizing: border-box;" then we keep it always with its defaul size (the padding is added on its inside) */
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
-
+.box-1,
+.box-2, 
+.box-3 {
+   width: 200px;
+   height: 200px;
+   color: white;
+}
+.box-1 {
+   background: red;
+   padding: 20px;
+   box-sizing: border-box;
+}
+.box-2 {
+   background: blue;
+}
+.box-3 {
+   background: green;
+   padding: 20px;
+}
