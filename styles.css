@@ -1,24 +1,14 @@
-/* 
-display: none - you get rid of the element in chrome developer tools 
-opacity: 0 - i'm just hiding it from the screen
-visibility: hidden; i'm just hidding from the screen*/
+/* Images as background */
 div {
-   background: blue;
-   margin: 10px;
-   color: white;
+   height: 400px;
+   color: pink;
 }
-.none {
-   display: none;
+.big-img {
+   background: url("./big.jpg");
 }
-.opacity-1 {
-   opacity: 1;
+.small-img {
+   background: url("./small.jpg");
 }
-.opacity-5{
-   opacity: 0.5;
-}
-.opacity-0 {
-   opacity: 0;
-}
-.visibility {
-   visibility: hidden;
+.folder-img {
+   background: url("./img/folder-img.jpg");
 }
