@@ -1,26 +1,24 @@
-/* when pedding a content (box), its dimentions will be added whit its already sizes
-if i use the "box-sizing: border-box;" then we keep it always with its defaul size (the padding is added on its inside) */
-*{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-}
-.box-1,
-.box-2, 
-.box-3 {
-   width: 200px;
-   height: 200px;
+/* 
+display: none - you get rid of the element in chrome developer tools 
+opacity: 0 - i'm just hiding it from the screen
+visibility: hidden; i'm just hidding from the screen*/
+div {
+   background: blue;
+   margin: 10px;
    color: white;
 }
-.box-1 {
-   background: red;
-   padding: 20px;
-   box-sizing: border-box;
+.none {
+   display: none;
 }
-.box-2 {
-   background: blue;
+.opacity-1 {
+   opacity: 1;
 }
-.box-3 {
-   background: green;
-   padding: 20px;
+.opacity-5{
+   opacity: 0.5;
+}
+.opacity-0 {
+   opacity: 0;
+}
+.visibility {
+   visibility: hidden;
 }
