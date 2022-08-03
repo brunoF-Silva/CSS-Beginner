@@ -1,19 +1,40 @@
-/* Horizontal Centering
-inline properties center automaticaly just by using "text-aling: center;" but this doesn't happen with the block ones, since their range still covers the hole horizontal web page,but we can mix width and "margin: whatever auto;" to fix this.
+/*
+Block: Top Bottom Margin Respected
+Inline: Top Bottom Margin Not Respected
+Mobile Navbar
+list-style-type:property
+descendant selectors
  */
- body {
-    text-alingh: center;
- }
- .block {
-    background: blue;
-    color: white;
-    width: 150px;
-    margin-left: auto;
-    margin-right: auto;
-    margin: 0px auto;
-    /* up and down, left and right */
- }
- .inline {
-    background: red;
-    color: white;
- }
+div {
+   /* for blocks */
+   background: blue;
+   color: white;
+   padding: 20px;
+   margin: 20px;
+}
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body {
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul li {
+   list-style-type: none;
+}
+/* i can't add margin (up and down) and padding 
+on in-line elements such as links:*/
+ul li a {
+   text-decoration: none;
+   text-transform: capitalize;
+   letter-spacing: 2px;
+   background: #222;
+   color: #f15025;
+   /* padding: 5px;
+   margin: 10px 10px:  
+   it doesn't work! */
+   display: block;
+   margin: 10px;
+   
+}
