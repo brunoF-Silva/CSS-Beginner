@@ -1,6 +1,4 @@
-/* Positions*/
-/* all the elements by default has position: static
-meaning if i added the paragraph two after paragraph one, then thats its gonna be displayed*/
+/* Position Relative min 8:33h*/
 div {
    border: 3px solid red;
    background: yellow;
@@ -9,7 +7,11 @@ div {
 }
 .one {
    background: blue;
-   text-align: left;
+   position: relative;
+   /* top: 50px; */
+   /* left: 20rem; */
+   right: 50%;
+   bottom: 20px;
 }
 .two {
    background: green;
@@ -18,3 +20,4 @@ div {
    background: lightcoral;
    font-size: 20px;
 }
+/* with top, bottom, left and right porpeties we are able to move an element away where it was before  thanks to the "position: static" element inside it */
