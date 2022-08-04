@@ -1,37 +1,22 @@
-/* Color gradient as background - Colorzilla.com*/
-* {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-}
-div {
-   min-height: 100vh;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   text-align: center;
-   font-size: 60px;
-   color: orange;
-}
+/*Float, Clear  min: 8:11h */
 .banner {
-   background: url("./big.jpg");
-   background-position: center;
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-attachment: fixed;
+   border: 5px solid red;
+   padding: 10px;
 }
-.header {
-   background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("./big.jpg") center/cover fixed no-repeat;
-   /* no-repeat and fixed can swich places */
+/* as paragraph is a level block element it has its new line property so it mess up our layout.
+if an element is block level then it itself has to have a new line.
+we can change that without using the display property, by using float and clear.
+by defalt an image is floated as none.*/
+
+img {
+   float: left;
 }
-.colorzilla {
-   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f2e830+0,22d8d8+45,2989d8+50,21c0ce+56,fc88d3+100&0.34+0,0.35+100 */
-      background: -moz-linear-gradient(top, rgba(242, 232, 48, 0.34) 0%, rgba(34, 216, 216, 0.34) 45%, rgba(41, 137, 216, 0.34) 50%, rgba(33, 192, 206, 0.34) 56%, rgba(252, 136, 211, 0.35) 100%);
-      /* FF3.6-15 */
-      background: -webkit-linear-gradient(top, rgba(242, 232, 48, 0.34) 0%, rgba(34, 216, 216, 0.34) 45%, rgba(41, 137, 216, 0.34) 50%, rgba(33, 192, 206, 0.34) 56%, rgba(252, 136, 211, 0.35) 100%);
-      /* Chrome10-25,Safari5.1-6 */
-      background: linear-gradient(to bottom, rgba(242, 232, 48, 0.34) 0%, rgba(34, 216, 216, 0.34) 45%, rgba(41, 137, 216, 0.34) 50%, rgba(33, 192, 206, 0.34) 56%, rgba(252, 136, 211, 0.35) 100%);
-      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#57f2e830', endColorstr='#59fc88d3', GradientType=0);
-      /* IE6-9 */
+/* by adding float we break the in level property of everything that comes next to the img i guess -- it breaks the normal flow of the document!!!--.
+ */
+p {
+   clear: left;
 }
+/* if i float to the left then i must clear also to the left.
+this way we have the elements without defalt margin between img and paragraph */
+/* if you're floating something in one direction and we want the next element to clear it and start a normal flow of the document as it should be, we also need to use the right or left property.
+Now we have the paragraph that is actually respecting that it needs to find a new line as it should be*/
