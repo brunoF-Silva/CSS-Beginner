@@ -1,4 +1,4 @@
-/* Position Relative min 8:33h*/
+/* Position Absolute*/
 div {
    border: 3px solid red;
    background: yellow;
@@ -7,11 +7,6 @@ div {
 }
 .one {
    background: blue;
-   position: relative;
-   /* top: 50px; */
-   /* left: 20rem; */
-   right: 50%;
-   bottom: 20px;
 }
 .two {
    background: green;
@@ -19,5 +14,11 @@ div {
 .special {
    background: lightcoral;
    font-size: 20px;
+   position: absolute;
+   top: 0;
+   right: 0;
+
 }
-/* with top, bottom, left and right porpeties we are able to move an element away where it was before  thanks to the "position: static" element inside it */
+/* in this position absolute we are still placing this position relative, however in this position relative the nearest ancestor that has the position relative. Now if position absolute cannot find that answer if it doesn't exist, then it places itself relative to the body.
+here, span has paragraphs one and two, then div and finally body as ancestors.
+as p one an two haven't the position relative, span looks for body, in order to set its position*/
