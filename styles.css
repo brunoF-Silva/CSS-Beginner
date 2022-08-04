@@ -1,11 +1,11 @@
-/* Position Absolute - we found another relative yep!
+/* Position Absolute - centered related to the body
 we must have a parent or an ancestor element with a relative statament*/
 div {
    border: 3px solid red;
    background: yellow;
    margin-top: 40px;
    position: static;
-   position: relative;
+   /* position: relative; */
 }
 .one {
    background: blue;
@@ -18,16 +18,9 @@ div {
    background: lightcoral;
    font-size: 20px;
    position: absolute;
-   top: 0;
-   right: 0;
+   top: 50%;
+   right: 50%;
+   /* it's not centered because we haven't look at the transform property yet. But with 50% 50% the special class will eventually disapear from the view as we scroll (and the body gets bigger i guess), but with position fix we "fix" it in one position */
 
 }
-/* in this position absolute we are still placing this position relative, however in this position relative the nearest ancestor that has the position relative. Now if position absolute cannot find that answer if it doesn't exist, then it places itself relative to the body.
-here, span has paragraphs one and two, then div and finally body as ancestors.
-as p one an two haven't the position relative, span looks for body, in order to set its position*/
-
-/* if we find, however, a prior ancestor with relative propertie elements, the abolute one will set its position related to it and then we can't cach it.  */
-
-/* what i've stated before only applies to two or to div but not to one, because what really matters is just an actual ancestor, as two that comes right before span, or div which is its parent, but not one that's just its siblin */
-
-/* position relative: we can move an element, but the element next to it loses its body level properties (new line propertie) */
+/* we can place "position: absolute" whereever we want, including in the body */
