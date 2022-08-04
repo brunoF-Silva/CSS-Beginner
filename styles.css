@@ -16,7 +16,7 @@ by defalt an image is floated as none.*/
    height: 300px;
 }
 p {
-   clear: right;
+   clear: both;
 }
 /* se "p clear" for nada, quebramos o flow de p.
 se "p clear" for right, p respeita que tem que ter uma linha somente para a imagem à direita, para a esquerda ele ficará ao seu lado assim que possível.
