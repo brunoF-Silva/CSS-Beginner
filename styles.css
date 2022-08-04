@@ -1,5 +1,13 @@
-/* Position Absolute - centered related to the body
-we must have a parent or an ancestor element with a relative statament*/
+/* Position Fix*
+the element position is set relative to the document itself */
+button{
+   background: red;
+   font-size: 40px;
+   color: white;
+   position: fixed;
+   top: 0;
+   right: 0;
+}
 div {
    border: 3px solid red;
    background: yellow;
@@ -20,7 +28,4 @@ div {
    position: absolute;
    top: 50%;
    right: 50%;
-   /* it's not centered because we haven't look at the transform property yet. But with 50% 50% the special class will eventually disapear from the view as we scroll (and the body gets bigger i guess), but with position fix we "fix" it in one position */
-
 }
-/* we can place "position: absolute" whereever we want, including in the body */
