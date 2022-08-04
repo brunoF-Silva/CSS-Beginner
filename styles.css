@@ -1,4 +1,4 @@
-/* Position Absolute*/
+/* Position Absolute - we found a relative yep!*/
 div {
    border: 3px solid red;
    background: yellow;
@@ -10,6 +10,7 @@ div {
 }
 .two {
    background: green;
+   position: absolute;
 }
 .special {
    background: lightcoral;
@@ -22,3 +23,9 @@ div {
 /* in this position absolute we are still placing this position relative, however in this position relative the nearest ancestor that has the position relative. Now if position absolute cannot find that answer if it doesn't exist, then it places itself relative to the body.
 here, span has paragraphs one and two, then div and finally body as ancestors.
 as p one an two haven't the position relative, span looks for body, in order to set its position*/
+
+/* if we find, however, a prior ancestor with relative propertie elements, the abolute one will set its position related to it and then we can't cach it.  */
+
+/* what i've stated before only applies to two or to div but not to one, because what really matters is just an actual ancestor, as two that comes right before span, or div which is its parent, but not one that's just its siblin */
+
+/* position relative: we can move an element, but the element next to it loses its body level properties (new line propertie) */
