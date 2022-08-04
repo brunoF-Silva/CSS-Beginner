@@ -20,5 +20,8 @@ div {
 .three {
    background: green;
 }
+h1 {
+   clear: both;
+}
 
 /* 100/3= 33.33, it assures me 100% of screen coverage regardless the screen size*/
