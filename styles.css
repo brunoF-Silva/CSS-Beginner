@@ -1,10 +1,24 @@
-/*Float, Clear and Overflow  min: 8:11h */
-.banner {
-   border: 5px solid red;
-   padding: 10px;
-   overflow: hidden;
+/* Three column layout using divs and floats*/
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
+
+div {
+   float: left;
+   height: 200px;
+   width: 33.33%;
+}
+
 .one {
-   float: right;
-   margin-left: 50px;
+   background: red;
 }
+.two {
+   background: blue;
+}
+.three {
+   background: green;
+}
+
+/* 100/3= 33.33, it assures me 100% of screen coverage regardless the screen size*/
