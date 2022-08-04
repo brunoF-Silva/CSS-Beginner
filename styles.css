@@ -8,15 +8,16 @@ if an element is block level then it itself has to have a new line.
 we can change that without using the display property, by using float and clear.
 by defalt an image is floated as none.*/
 
-img {
+.one {
+   float: right;
+}
+.two {
    float: left;
+   height: 300px;
 }
-/* by adding float we break the in level property of everything that comes next to the img i guess -- it breaks the normal flow of the document!!!--.
- */
 p {
-   clear: left;
+   clear: right;
 }
-/* if i float to the left then i must clear also to the left.
-this way we have the elements without defalt margin between img and paragraph */
-/* if you're floating something in one direction and we want the next element to clear it and start a normal flow of the document as it should be, we also need to use the right or left property.
-Now we have the paragraph that is actually respecting that it needs to find a new line as it should be*/
+/* se "p clear" for nada, quebramos o flow de p.
+se "p clear" for right, p respeita que tem que ter uma linha somente para a imagem à direita, para a esquerda ele ficará ao seu lado assim que possível.
+se "p clear" for both, p respeta que deve ter uma linha para as duas imagens */
