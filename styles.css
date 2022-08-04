@@ -2,6 +2,7 @@
 .banner {
    border: 5px solid red;
    padding: 10px;
+   overflow: hidden;
 }
 /* as paragraph is a level block element it has its new line property so it mess up our layout.
 if an element is block level then it itself has to have a new line.
@@ -13,11 +14,9 @@ by defalt an image is floated as none.*/
 }
 .two {
    float: left;
-   height: 300px;
+   height: 1000px;
 }
 p {
    clear: both;
 }
-/* se "p clear" for nada, quebramos o flow de p.
-se "p clear" for right, p respeita que tem que ter uma linha somente para a imagem à direita, para a esquerda ele ficará ao seu lado assim que possível.
-se "p clear" for both, p respeta que deve ter uma linha para as duas imagens */
+/* here, if we large the image's dimensions way too much it would become larger than the box-element. That's why we use "overflow: hidden", so it never happens"   */
