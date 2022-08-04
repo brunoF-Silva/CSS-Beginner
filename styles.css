@@ -1,31 +1,35 @@
-/* Position Fix*
-the element position is set relative to the document itself */
-button{
-   background: red;
-   font-size: 40px;
-   color: white;
-   position: fixed;
-   top: 0;
-   right: 0;
-}
-div {
-   border: 3px solid red;
+/* Media Queries - marcando o limite da mudança! min 8:42h
+largura px X altura px --- width px X height px
+Responsive Design
+Style Elements On Different Screen Sizes
+min-width: --- starting from
+max-width: --- up to
+Mobile First
+ */
+/* we're gonna do mobile first, where we gonna start styling all the style form a small screen and then we're gonna add the media queries */
+
+body {
    background: yellow;
-   margin-top: 40px;
-   position: static;
-   /* position: relative; */
 }
-.one {
+.banner {
    background: blue;
 }
-.two {
-   background: green;
-   /* position: absolute; */
+h1 {
+   color: white;
+   text-align: center;
+   text-decoration: underline;
+   text-transform: capitalize;
 }
-.special {
-   background: lightcoral;
-   font-size: 20px;
-   position: absolute;
-   top: 50%;
-   right: 50%;
+
+@media screen and (min-width: 576px) {
+   body{
+      background: red;
+   }
+   .banner {
+      background: yellow;
+   }
+   h1 {
+      color: black;
+      font-size: 60px;
+   }
 }
