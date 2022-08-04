@@ -1,12 +1,6 @@
-/* Media Queries - marcando o limite da mudança! min 8:42h
-largura px X altura px --- width px X height px
-Responsive Design
-Style Elements On Different Screen Sizes
-min-width: --- starting from
-max-width: --- up to
-Mobile First
- */
-/* we're gonna do mobile first, where we gonna start styling all the style form a small screen and then we're gonna add the media queries */
+/* Media Queries - omission bad, overwrite good
+we must overwrite one propertie in @media so we change it in the bigger screen, such as with undeline here*/
+/* omission doesn't assures me that the older properties will disappear */
 
 body {
    background: yellow;
@@ -31,5 +25,20 @@ h1 {
    h1 {
       color: black;
       font-size: 60px;
+      /* text-decoration:none ; */
+   }
+}
+@media screen and (min-width: 768px) {
+   body{
+      background: green;
+   }
+   .banner {
+      background: blue;
+   }
+   h1 {
+      color: red;
+      font-size: 60px;
+      text-align: right;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
    }
 }
