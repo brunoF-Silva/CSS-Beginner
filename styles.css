@@ -3,9 +3,8 @@ Pseudo Elements adds content ::before or ::after CONTENT, not element.
 content: '' --- required
 img --- does not work
 min 9:06 h
+PERFECT FOR COLUMN LAYOUTS
  */
-
-/* pseudo elements styles specific parts of the element e.g. before and after the element and we can insert html dynamically from our css, essentially avoiding extra markup (marcação)*/
 
 p::before {
    content: "hello ";
@@ -15,11 +14,22 @@ p::before {
    font-size: 2rem;
    color: red;
 }
-/* if we look in dev tools ::before markup is in the html file now */
 p::after {
    content: "";
    display: block;
    width: 50px;
    height: 50px;
    background: green;
+}
+div {
+   border: 2px solid red;
+   width: 60vw;
+   margin: 100px auto;
+   /* divs covers nice left, right and top, but a space always remains on the bottom no matter what and this regardless height: 100%.
+   what in fact fix this problem is "display: block" inside img, and we can get rid of an extra margin*/
+}
+img {
+   width: 100%;
+   display: block;
+   /* "width: 100%" assures me that the image will full cover the div no matter how stretched it is, given its resposive feature in this code -- the image is responsive to the div, meaning as I increase the size of the div, the image will follow along */
 }
