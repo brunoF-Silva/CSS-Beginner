@@ -1,34 +1,33 @@
 /* 
-animation-fill-mode: what values are applied by the animation outside the time it is executing
-*/
-
+CSS VARIABLES AKA Custom Properties
+hold a value and reuse it
+--varName: value
+property:var(--varName)
+scope
+:root{} ==global - we can access it everywhere since root stands for html
+element === local
+any property */
+:root {
+   --primaryColor: #1313fa;
+   --secondaryColor: #f15025;
+   --mainTransition: all 0.4s linear;
+}
+.heading {
+   color: var(--primaryColor);
+}
+.second-heading {
+   color: var(--primaryColor);
+   transition: var(--mainTransition);
+}
+.second-heading:hover {
+   color: var(--secondaryColor);
+}
 div {
-   width: 200px;
-   height: 100px;
-   color: white;
-   margin: 10px;
+   --primaryRed: red;
 }
-.animation {
-   background: blue;
-   animation: move 5s 2;
-   animation-fill-mode: forwards;
+.main-text {
+   color: var(--primaryRed);
 }
-
-@keyframes move {
-   0% {
-      opacity: 0;
-   }
-   25% {
-      transform: translateX(200px);
-      opacity: 0.25;
-   }
-   50% {
-      transform: translateX(-100px);
-      opacity: 1;
-   }
-   100% {
-      transform: translateX(400px);
-      opacity: 0.5;
-      /* by adding animation-fill-mode: forward we will make the animation end up with opacity: 0.5 and 400px away since usually it goes back to the opacity: 1 and default place after the animation is over */
-   }
+.third-heading {
+   color: var(--primaryRed);
 }
