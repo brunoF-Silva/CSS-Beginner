@@ -1,0 +1,23 @@
+/* 
+transform : translate(% or px), scale(), rotate(), skew() 
+*/
+
+div {
+   width: 300px;
+   height: 300px;
+   display: inline-block;
+   /* editados a nível de bloco, mas ficam inline */
+}
+.one {
+   background: red;
+   transform: translateX(50%);
+   /* 50% of those 300px of the element's width and height*/
+}
+.two {
+   background: green;
+}
+.three {
+   background: blue;
+   transform: translateX(150px);
+   /* see, exactly the half */
+}
