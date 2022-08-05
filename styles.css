@@ -1,11 +1,23 @@
-/* ICONS
-Font-Awesomme Icons
-Free, Easy to get up running, simple syntax
-*/
- .fa-home {
-   color: green;
-}
-.social-icon {
-   font-size: 4rem;
-   color: blue;
-} 
+/* 
+text-shadow: x y blur color;
+box-shadow: x y blur color spread radius;
+ */
+
+ h1 {
+   /* text-shadow: -11px 1px 3px red; */
+   text-shadow: 15px -14px 3px rgba(93, 226, 176, 0.54);
+ }
+ .box {
+   width: 200px;
+   height: 100px;
+   background: blue;
+   margin: 20px;
+   /* box-shadow: 3px 5px 5px green; */
+   transition: all 0.5s linear;
+ }
+
+  .box:hover {
+   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+ } 
