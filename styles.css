@@ -1,13 +1,31 @@
-/* pseudo-classes selector--- :link :visited :hover :active */
-a:link {
-   color: aqua;
+/* root-class selector ---  :root root element of the document
+html element
+general styles
+css variables */
+/* here is the html document */
+/* REM IS A VALUE THAT'S RELATIVE TO THE ROOT (HTML) AND CHANGES ITS SIZE AS DESCRIBED IN IT */
+:root {
+   /* background: red; */
+   font-size: 150%;
 }
-a:visited {
-   color: red;
+/* 1rem == 16px
+the reason why we use rem:
+if the user would like to change the font-size by changing the browser settings then the text using rem will also change (stretch or shrink) */
+h1 {
+   font-size: 3rem;
+   /* rem is a response value that responses toward the root, thei will response as the root changes
+   -if we're gonna style something to relative to the root, we can go back to that rule and change these settings
+   "font-size: 100%" in :root and everything is normal;
+   "font-size: 150% in :root and the responsive values (rem) are gonna change just as they change with the browser settings
+   to check this just comment line 08*/
 }
-a:hover {
-   color: blue;
+
+.absolute {
+   font-size: 24px;
+   /* pixels are absolute values*/
 }
-a:active {
-   color: green;
+
+.responsive {
+   font-size: 1.5rem; 
+   /* 1.5 x 3rem = 24px */
 }
