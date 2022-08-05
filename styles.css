@@ -1,6 +1,5 @@
-/* 
-text-shadow: x y blur color;
-box-shadow: x y blur color spread radius;
+/* Browser/Render Pre-fixes
+ways for different browsers to have support for the latest css features (e.g starts after .box:hover)
  */
 
  h1 {
@@ -21,3 +20,4 @@ box-shadow: x y blur color spread radius;
       -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
       box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
  } 
+ /* we don't have to write render prefixes cause there are things that can do it for us such as gulp.js or autoprefixer css online */
