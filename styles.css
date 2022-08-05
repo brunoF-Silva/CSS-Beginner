@@ -1,15 +1,13 @@
-/* :hover --- pseudo-classes selector*/
-/* the general idea of pseudo-classes: as the element it is gonna be changing some kind of state
-in the hover as we're gonna be hovering over the actual element then something is gonna change about that element
-it can be applied to everything*/
-
-p:hover {
+/* pseudo-classes selector--- :link :visited :hover :active */
+a:link {
+   color: aqua;
+}
+a:visited {
    color: red;
 }
-.header:hover {
-   background: blue;
-   color: white;
-}
 a:hover {
-   text-decoration: none;
+   color: blue;
+}
+a:active {
+   color: green;
 }
