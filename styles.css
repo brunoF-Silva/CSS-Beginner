@@ -1,5 +1,5 @@
 /* 
-transform: translate(% or px), scale(number times actual size), rotate(), skew() 
+transform: translate(% or px), scale(number times actual size), rotate(z), skew() 
 */
 
 div {
@@ -10,13 +10,15 @@ div {
 }
 .one {
    background: red;
-   transform: scaleX(0.5)
+   transform: rotate(340deg);
 }
 .two {
    background: green;
-   transform: scaleY(0.5);
+   transform: rotateZ(45deg);
 }
 .three {
    background: blue;
-   transform: scale(1.5, 1.5);
+   /* transform: rotateX(90deg); */
+   /* it rotates div around the x axis till it disappears from our view completely */
+   transform: rotateY(80deg);
 }
