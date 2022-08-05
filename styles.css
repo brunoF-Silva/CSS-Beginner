@@ -1,20 +1,7 @@
-/* Descendant and Child Combinators
-children can be descendant but descendant are not gonna be children*/
-/* remember the word ANCESTOR */
-
-/* working with class is more specific (it doesn't matter if whether i state it at the end or at the top of the document */
-.header h1 {
-   color: green;
+/* ::first-line ::first-letter --- pseudo-elements */
+p::first-line {
+   font-weight: bold;
 }
-/* direct child */
-.header > h1 {
-   color: purple;
-}
-/* selecting ALL the  descendant from the div (div is also ancestor for the h1): */
-div h1 {
-   color: red;
-}
-/* selecting JUST the direct children of the div (STOPS AFTER ONE)*/
-div > h1 {
-   color: blue;
+p::first-letter {
+   font-size: 3rem;
 }
