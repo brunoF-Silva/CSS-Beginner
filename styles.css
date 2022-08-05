@@ -1,18 +1,20 @@
-/* Descendant and Child Combinators 
+/* Descendant and Child Combinators
 children can be descendant but descendant are not gonna be children*/
-* {
-   color: red;
-}
-#heading {
-   font-size: 40px;
-   text-transform: capitalize;
-   color: blue;
-}
-.heading {
-   font-size: 20px;
-   text-transform: capitalize;
+/* remember the word ANCESTOR */
+
+/* working with class is more specific (it doesn't matter if whether i state it at the end or at the top of the document */
+.header h1 {
    color: green;
 }
-p {
-   letter-spacing: 20px;
+/* direct child */
+.header > h1 {
+   color: purple;
+}
+/* selecting ALL the  descendant from the div (div is also ancestor for the h1): */
+div h1 {
+   color: red;
+}
+/* selecting JUST the direct children of the div (STOPS AFTER ONE)*/
+div > h1 {
+   color: blue;
 }
