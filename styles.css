@@ -1,5 +1,5 @@
 /* 
-transform : translate(% or px), scale(), rotate(), skew() 
+transform: translate(% or px), scale(number times actual size), rotate(), skew() 
 */
 
 div {
@@ -10,14 +10,13 @@ div {
 }
 .one {
    background: red;
-   transform: translateX(50%);
-   /* 50% of those 300px of the element's width and height*/
+   transform: scaleX(0.5)
 }
 .two {
    background: green;
+   transform: scaleY(0.5);
 }
 .three {
    background: blue;
-   transform: translateX(150px);
-   /* see, exactly the half */
+   transform: scale(1.5, 1.5);
 }
