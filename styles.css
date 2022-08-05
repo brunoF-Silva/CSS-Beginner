@@ -1,64 +1,18 @@
-/*
-Pseudo Elements adds content ::before or ::after CONTENT, not element.
-content: '' --- required
-img --- does not work
-min 9:06 h
-PERFECT FOR COLUMN LAYOUTS
-we will place ::before and ::after before and after the actual content of the chosen element NOT BEFORE AND AFTER THE ELEMENT
- */
-
-p::before {
-   content: "hello ";
-   display: block;
-   background: black;
-   font-weight: bold;
-   font-size: 2rem;
+/* Descendant and Child Combinators 
+children can be descendant but descendant are not gonna be children*/
+* {
    color: red;
 }
-p::after {
-   content: "";
-   display: block;
-   width: 50px;
-   height: 50px;
-   background: green;
+#heading {
+   font-size: 40px;
+   text-transform: capitalize;
+   color: blue;
 }
-div {
-   width: 60vw;
-   margin: 100px auto;
-   position: relative;
+.heading {
+   font-size: 20px;
+   text-transform: capitalize;
+   color: green;
 }
-img {
-   width: 100%;
-   display: block;
-}
-div::before{
-   content: "";
-   border: 2px solid grey;
-   width:  100%;
-   height: 100%;
-   position: absolute;
-   box-sizing: border-box;
-   top: -40px;
-   left: -40px;
-   z-index: -2;
-   transition: all 0.5s linear;
-}
-/* the reason why we have an extra space in the div::before content box covering the image, while there was no "box-sizing: border-box" is because this is a border problem */
-/* as image is already the content, is impossible to use ::before and ::after with it*/ 
-div::after {
-   content: "";
-   background: grey;
-   width: 100%;
-   height: 100%;
-   position: absolute;
-   box-sizing: border-box;
-   top: -20px;
-   left: -20px;
-   z-index: -2;
-   transition: all 0.5s linear;
-}
-div:hover::after,
-div:hover::before {
-   top: 0;
-   left: 0;  
+p {
+   letter-spacing: 20px;
 }
