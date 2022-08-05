@@ -1,33 +1,11 @@
-/* 
-CSS VARIABLES AKA Custom Properties
-hold a value and reuse it
---varName: value
-property:var(--varName)
-scope
-:root{} ==global - we can access it everywhere since root stands for html
-element === local
-any property */
-:root {
-   --primaryColor: #1313fa;
-   --secondaryColor: #f15025;
-   --mainTransition: all 0.4s linear;
+/* ICONS
+Font-Awesomme Icons
+Free, Easy to get up running, simple syntax
+*/
+ .fa-home {
+   color: green;
 }
-.heading {
-   color: var(--primaryColor);
-}
-.second-heading {
-   color: var(--primaryColor);
-   transition: var(--mainTransition);
-}
-.second-heading:hover {
-   color: var(--secondaryColor);
-}
-div {
-   --primaryRed: red;
-}
-.main-text {
-   color: var(--primaryRed);
-}
-.third-heading {
-   color: var(--primaryRed);
-}
+.social-icon {
+   font-size: 4rem;
+   color: blue;
+} 
