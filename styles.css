@@ -1,6 +1,11 @@
 /* 
-Semantic HTML
-we will use specific elements the struct your content instead of div this div that, span this span that, we'll use semantic tags
-semantic tags works just like regular tags but they provide us with a structure and they say the browser what to do and how to do, and improves my site accessibility.
-https: //www.w3schools.com/html/html5_semantic_elements.asp
- */
+Emmett Snippets
+crt+bar to see options
+element.firstClass.secondClass
+element#ID
+element#third.third
+special way for divs: #id.classOne.class2
+fast way for children: div>ul>li*5
+fast adding text: p{some text}
+combining: ul>li*6{$} -- adding its numbers
+*/
