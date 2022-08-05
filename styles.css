@@ -1,45 +1,44 @@
-/* 
-transition: change over time
-transition-property:
-transition-duration:
+/*Optional transition timing function/property
+how the transition takes place
+transition-timing-function:
+transition: all 3s HERE 5s;
+ease = default
+ease = slow start, fast, slow end
+linear = same speed start to end
+ease-in = slow start
+ease-out = slow end
+ease-in-out = slow start, fast, slow end
+
+SEARCH MORE ABOUT THE TRANSITION TIMING FUNCTION
 */
+
 div {
-   width: 300px;
-   height: 300px;
-   display: inline-block;
-   /* editados a nível de bloco, mas ficam inline EU ACHO */
-}
-/* making use of a psuedo selector: */
-div:hover {
-   background: coral;
-}
-.one {
-   background: red;
-   /* here we say which property is going to be changed: */
-   transition-property: background, border-radius;
-   transition-duration: 2s, 1s;
-   transition-delay: 1.5s;
-}
-.two {
-   background: green;
-   /* shorthand when everything happens at the same time: */
-   transition: all 2s 1s;
-}
-.three {
-   /* transition: nameofpropertie duration delay*/
+   width: 100px;
+   height: 100px;
    background: blue;
-   transition: background 3s 0.5s, border-radius 3s;
+   color: white;
+   margin: 15px;
+   transition: all 1s;
 }
-
-
-
-.one:hover {
-   background: magenta;
-   border-radius: 50%;
+div:hover {
+   transform: translateX(100px);
 }
-.two:hover {
-   border-radius: 20%;
+.ease {
+   /* ease is set by defaul.
+   this property might be setted all at once: */
+   /* transition: all 2s ease; */
+   /* or i might just add this to the line 19:*/
+   transition-timing-function: ease;
 }
-.three:hover {
-   border-radius: 50%;
+.linear {
+   transition-timing-function: linear;
+}
+.ease-in {
+   transition-timing-function: ease-in;
+}
+.ease-out {
+   transition-timing-function: ease-out;
+}
+.ease-in-out {
+   transition-timing-function: ease-in-out;
 }
