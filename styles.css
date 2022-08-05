@@ -1,23 +1,6 @@
-/* Browser/Render Pre-fixes
-ways for different browsers to have support for the latest css features (e.g starts after .box:hover)
+/* 
+Semantic HTML
+we will use specific elements the struct your content instead of div this div that, span this span that, we'll use semantic tags
+semantic tags works just like regular tags but they provide us with a structure and they say the browser what to do and how to do, and improves my site accessibility.
+https: //www.w3schools.com/html/html5_semantic_elements.asp
  */
-
- h1 {
-   /* text-shadow: -11px 1px 3px red; */
-   text-shadow: 15px -14px 3px rgba(93, 226, 176, 0.54);
- }
- .box {
-   width: 200px;
-   height: 100px;
-   background: blue;
-   margin: 20px;
-   /* box-shadow: 3px 5px 5px green; */
-   transition: all 0.5s linear;
- }
-
-  .box:hover {
-   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
- } 
- /* we don't have to write render prefixes cause there are things that can do it for us such as gulp.js or autoprefixer css online */
